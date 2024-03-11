@@ -4,30 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".Ac">
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/itemRv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:translationZ="-2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editURL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="12"
-        android:padding="5dp"
-        android:inputType="textUri"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:ems="8"
         android:hint="https://www.example.com/page.html"
-        android:textSize="15sp"
-        android:elevation="2dp"
-        android:background="@color/white"
+        android:inputType="textUri"
+        android:padding="8dp"
+
+
+
+        android:textSize="22sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -35,13 +42,16 @@
         android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp"
+
         android:ems="7"
-        android:padding="5dp"
-        android:inputType="text"
         android:hint="Item Name"
-        android:elevation="2dp"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/white"
+
         android:textSize="25sp"
-        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/editURL"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -49,24 +59,51 @@
         android:id="@+id/editPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="5dp"
+        android:padding="8dp"
         android:inputType="numberDecimal"
         android:hint="ex: 5.99"
+
         android:textSize="25sp"
-        android:background="@color/white"
-        android:elevation="2dp"
+        android:textColor="@color/white"
+
         app:layout_constraintBottom_toBottomOf="@+id/editName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editName" />
 
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+
+
+        android:background="@color/red"
+
+
+        android:translationZ="-1dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/button"
-        android:elevation="3dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        android:backgroundTint="@color/festive_green"
+
+
         android:text="Add"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPrice" />
+        app:layout_constraintTop_toBottomOf="@+id/editPrice"
+        app:layout_constraintVertical_bias="0.5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="30sp"
+        android:maxEms="5"
+        android:singleLine="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="ItemName"/>
@@ -21,6 +23,8 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="15sp"
+        android:autoLink="web"
+        android:singleLine="true"
 
         tools:text="ItemURL"
         app:layout_constraintStart_toStartOf="parent"

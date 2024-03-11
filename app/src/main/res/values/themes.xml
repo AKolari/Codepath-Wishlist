@@ -3,6 +3,12 @@
     <style name="Base.Theme.CodepathWishlist" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        
+        <item name="android:statusBarColor">@color/red</item>
+        <item name="android:textColorHint">#7590AD72</item>
+        <item name="android:fontFamily">@font/yusei_magic_regular</item>
+
+
     </style>
 
     <style name="Theme.CodepathWishlist" parent="Base.Theme.CodepathWishlist" />

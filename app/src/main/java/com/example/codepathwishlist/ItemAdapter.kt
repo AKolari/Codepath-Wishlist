@@ -5,11 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
 
 class ItemAdapter(private var wishList: ArrayList<Item>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
+    var expanded = false;
     // Provide a direct reference to each of the views within a data item
     // Used to cache the views within the item layout for fast access
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -22,6 +25,7 @@ class ItemAdapter(private var wishList: ArrayList<Item>): RecyclerView.Adapter<I
         val nameTextView: TextView;
         val urlTextView: TextView;
         val priceTextView: TextView
+
 
         init {
             // TODO: Store each of the layout's views into
@@ -50,6 +54,24 @@ class ItemAdapter(private var wishList: ArrayList<Item>): RecyclerView.Adapter<I
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val wishListItem=wishList.get(position)
+
+        holder.nameTextView.setOnClickListener{
+            if(expanded){
+                expanded=false
+                holder.nameTextView.maxEms=5
+                holder.priceTextView.isVisible=true
+                holder.nameTextView.isSingleLine=true
+            }
+            else{
+                expanded=true
+                holder.nameTextView.maxEms=10
+                holder.priceTextView.isInvisible=true
+                holder.nameTextView.isSingleLine=false
+
+            }
+        }
+
+
         holder.nameTextView.text=wishListItem.name
         holder.urlTextView.text=wishListItem.url
         holder.priceTextView.text="$"+wishListItem.price.toString()
