@@ -1,10 +1,10 @@
 # Android Project 2 - *Wishlist*
 
-Submitted by: **Andi Kolaro**
+Submitted by: **Andi Kolari**
 
 **Wishlist** is a wishlist app that helps the user keep track of what they want to buy.
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
@@ -15,18 +15,16 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Wishlist app is 🎨 **customized** 🎨
-- [ ] User can delete an item by long pressing on the item
-- [ ] User can open an item's URL by clicking on the item
+- [X] Wishlist app is 🎨 **customized** 🎨
+- [X] User can open an item's URL by clicking on the item
 
-The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![ezgif com-video-to-gif-converter (1)](https://github.com/AKolari/Codepath-Wishlist/assets/90071560/3831dd5e-6b93-49ac-a81a-af9a18dc593f)
+![WishList-ezgif com-video-to-gif-converter](https://github.com/AKolari/Codepath-Wishlist/assets/90071560/80973fd7-56e2-47f5-b301-3186d414ba10)
+
 
 GIF created with ...  
 EZGif
